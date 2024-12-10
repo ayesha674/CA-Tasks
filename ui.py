@@ -22,4 +22,7 @@ with gr.Blocks(title="chatbot") as demo:
        textbox = gr.Textbox(scale=7)
       submit = gr.Button(text="Submit",scale=3)
 
-demo.launch()
+demo.launch(
+   server_name="0.0.0.0"
+   server_port="7860"
+)
